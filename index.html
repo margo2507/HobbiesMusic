@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <script src="script.js"></script>
+  
+    <h1 style="color:black">Hobbies: Music</h1>
+    <h2 style="color:black">Survey For The Guitar Players</h2>
+
+    <img src="guitarred.png" alt="Guitar Red" 
+
+  <form>
+
+    <div class = "q">
+      <label for="mused">Musical Education (musical school, college, etc.)</label><br>
+  		<input type="text" id="mused" name="new" onblur="HandlemusedChange()" required><br>
+    </div>
+
+    <div class = "q">
+      <label for="why">Why did you choose this particular hobby?</label><br>
+  		<input type="text" id="why" name="why" onblur= "HandlewhyChange()" required><br>
+    </div>
+
+    <div class = "q">
+      <label for="genre">Favorite Music Genre</label><br>
+  		<input type="text" id="genre" name="genre" onblur="HandlegenreChange()" required><br>
+    </div>
+
+    <div class = "q">
+      <label for="band">Are you a member of any band?</label><br>
+      <input type="radio" id="band" name="band" onblur="HandlebandChange(event)" value="Yes">
+      <label for="yes">Yes</label><br>
+			<input type="radio" id="band" name="band"  onblur="HandlebandChange(event)" value="No">
+      <label for="no">No</label><br>
+    </div>
+
+    <div class = "q">
+      <label for="guitartype">Guitar Type</label><br>
+      <input type="radio" id="guitartupe" name="guitartype" onchange="HandleguitartypeChange(event)" value="guitartype">
+      <label for="classical">Classical</label><br>
+			<input type="radio" id="classical" name="guitartype" onchange="HandleguitartypeChange(event)"  value="classical">
+      <label for="accoustic">Accoustic</label><br>
+			<input type="radio" id="accoustic" name="guitartype" onchange="HandleguitartypeChange(event)" value= "accoustic">
+			<label for="electrical">Electrical</label><br>
+			<input type="radio" id="electrical" name="guitartype"onchange="HandleguitartypeChange(event)"   value="electrical">
+			<label for="bass">Bass</label><br>
+      <input type="radio" id="bass" name="guitartype" onchange="HandleguitartypeChange(event)" 
+      value="bass">
+      <label for="other">Other</label><br>
+      <input type="text" id="other" name="other" onblur="HandleguitartypeChange()" ><br>
+    </div> 
+  
+    <div class = "q">
+      <label for="guitarlabel">Guitar Label</label><br>
+			<input type="radio" id="guitarlabel" name="guitarlabel" onchange="HandleguitarlabelChange(event)" value="guitarlabel">
+			<label for="fender">Fender</label><br>
+			<input type="radio" id="fender" name="guitarlabel" onchange="HandleguitarlabelChange(event)"value="fender">
+			<label for="ibanez">Ibanez</label><br>
+			<input type="radio" id="ibanez" name="guitarlabel"onchange="HandleguitarlabelChange(event)" value="ibanez">
+			<label for="sx">SX</label><br>
+      <input type="radio" id="sx" name="guitarlabel" onchange="HandleguitarlabelChange(event)" value="sx">
+      <label for="other">Other</label><br>
+      <input type="text" id="other" name="other" onblur="HandleguitarlabelChange()" required><br>
+    </div>
+
+    <div class = "q">
+      <label for="stringsnum">Strings Number</label><br>
+			<input type="radio" id="stringsnum" name="stringsnum" onchange="HandlestringsnumChange(event)" value="stringsnum">
+			<label for="6">6</label><br>
+			<input type="radio" id="6" name="stringsnum" onchange="HandlestringsnumChange(event)" value="6">
+      <label for="7">7</label><br>
+			<input type="radio" id="7" name="stringsnum" onchange="HandlestringsnumChange(event)" value="7">
+			<label for="12">12</label><br>
+      <input type="radio" id="12" name="stringsnum" onchange="HandlestringsnumChange(event)"value="12">
+      <label for="other">Other</label><br>
+      <input type="text" id="other" name="other" onblur="HandlestringsnumChange()" required><br>
+    </div>
+
+      <input type="submit"onclick="console.log(hobbies)">
+
+      <script src="script.js"></script>
+
+
+
+  </body>
+</html>
